@@ -321,8 +321,7 @@ a { color: inherit; }
 .weeks .is-exam:hover { background: var(--yellow); }
 .weeks .is-exam .wk, .weeks .is-exam .when { color: var(--ink); }
 .weeks .is-exam .what { font-weight: 700; }
-.syl__foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.2rem 2rem; margin-top: 1.7rem; }
-.fine { font-size: .8rem; }
+.syl__foot { display: flex; justify-content: flex-end; margin-top: 1.7rem; }
 @media (max-width: 560px) {
   .weeks li { grid-template-columns: 2rem 1fr; }
   .weeks .what { grid-column: 2; }
@@ -375,6 +374,7 @@ a { color: inherit; }
   font: 700 clamp(1.5rem, 2.6vw, 1.9rem) / 1.15 var(--hand); color: var(--ink); white-space: nowrap;
 }
 .tape--tr { left: auto; right: -1.4rem; rotate: 7deg; }
+.tape--label.tape--mid { left: 50%; right: auto; top: -1.3rem; translate: -50% 0; rotate: -2deg; }   /* centred, where a plain strip of tape would sit */
 @media (max-width: 820px) {
   .album { display: flex; flex-direction: column; gap: 3rem; }
   .album__b { width: 94%; align-self: flex-end; }
@@ -397,6 +397,8 @@ a { color: inherit; }
 .foot a { text-decoration: none; background: linear-gradient(var(--yellow), var(--yellow)) no-repeat 0 100% / 100% 1.5px; transition: color .3s; padding-bottom: 2px; }
 .foot a:hover { color: var(--yellow); }
 .foot__dim { color: #98a2aa; font-size: .84rem; }
+.foot__credit { margin-top: 1.7rem; color: #98a2aa; font-size: .84rem; line-height: 1.9; }
+.foot__credit a { color: #e9e7da; }
 .foot__ig { display: inline-flex; align-items: center; gap: .55em; font-weight: 500; }
 .foot__ig svg { width: 1.35em; fill: none; stroke: currentColor; stroke-width: 1.7; }
 .foot__ig .fill { fill: currentColor; stroke: none; }
