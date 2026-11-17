@@ -321,6 +321,8 @@ a { color: inherit; }
 .weeks .is-exam:hover { background: var(--yellow); }
 .weeks .is-exam .wk, .weeks .is-exam .when { color: var(--ink); }
 .weeks .is-exam .what { font-weight: 700; }
+.weeks .is-break .when, .weeks .is-break .what { color: var(--ink-soft); }
+.weeks .is-break .what { font-style: italic; }
 .syl__foot { display: flex; justify-content: flex-end; margin-top: 1.7rem; }
 @media (max-width: 560px) {
   .weeks li { grid-template-columns: 2rem 1fr; }
